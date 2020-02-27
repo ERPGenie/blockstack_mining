@@ -1,27 +1,33 @@
-Equal for All Mining Proposal
+[role="pagenumrestart"]
 
-CONCEPT
+== "Equal-for-All" Mining Proposal
+
+[[Concept]]
+=== CONCEPT
 
 To participate in mining the following criteria is enforced:
 
-1.	1 personal blockstack ID = 1 mining node (you might have multiple IDs linked to you but all these IDs relate to 1 personal blockstack ID / address
-That’s it… Everyone can easily participate if they have a blockstack ID.
-“Equal mining opportunity for all” would work as such:
-1.	Each miner would run a full node of blockstack and install the mining software
-a.	Configuration of the mining software would include:
-i.	BTC address – for staking BTC and receiving BTC
-ii.	Blockstack ID (for validation)
-iii.	Deviation % (+ or -) above the set BTC fee per block (limited to x% : potentially -5% to +5%)
-1.	This is the only variable that a miner can adjust to influence their winning chances
-2.	Blockstack will publish the total number of BTC needed to mine a block e.g. 1 BTC
-a.	TOTAL BTC = 1
-3.	Blockstack will publish the total number of active miners e.g. 100
-a.	TOTAL MINERS = 100
-4.	When the process of mining a block starts the code will read (2) and (3) to determine the amount of BTC to be committed as a transaction fee.
-a.	100 TOTAL MINERS {3a} x ( X Transaction Fee {4} + 5% DEVIATION % {1aiii} ) = 1 TOTAL BTC {2a}
-i.	X (the transaction fee) is calculated for each miner and only differs slightly based on the choice that the miner has made to slightly discount the fee (slightly less chance of winning) or slightly increase the fee (slightly increased chance of winning).
+* 1 personal blockstack ID = 1 mining node (you might have multiple IDs linked to you but all these IDs relate to 1 personal blockstack ID / address
 
-REASONING
+*That’s it…* Everyone can easily participate if they have a blockstack ID.
+
+“*Equal-for-all*" mining opportunity would work as such:
+
+. Each miner would run a full node of blockstack and install the mining software
+.. Configuration of the mining software would include:
+... *BTC address* – for staking BTC and receiving BTC
+... *Blockstack ID* (for validation)
+... *Deviation %* (+ or -) above the set BTC fee per block (limited to x% : potentially -5% to +5%)
+.... This is the only variable that a miner can adjust to influence their winning chances
+. Blockstack will publish the total number of BTC needed to mine a block e.g. 1 BTC
+.. *TOTAL BTC* = 1
+. Blockstack will publish the total number of active miners e.g. 100
+.. *TOTAL MINERS* = 100
+. When the process of mining a block starts the code will read (2) and (3) to determine the amount of BTC to be committed as a transaction fee.
+.. 100 *TOTAL MINERS* {3a} x ( _X_ *Transaction Fee* {4} + 5% *DEVIATION %* {1aiii} ) = 1 *TOTAL BTC* {2a}
+... _X_ (the transaction fee) is calculated for each miner and only differs slightly based on the choice that the miner has made to slightly discount the fee (slightly less chance of winning) or slightly increase the fee (slightly increased chance of winning).
+
+=== REASONING
 
 Using bitcoin as an example, everyday folks cannot realistically hope to win a block insertion by running their own mining operation without expending a small fortune to bolster their computing power. Their only option to take part in mining is to join a pool… 
 
